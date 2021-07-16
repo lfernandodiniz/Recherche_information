@@ -34,7 +34,6 @@ trouble_dao = TroubleDao(db)
 @app.route("/")
 def index():
 
-
     return render_template('index.html', titulo='Machines',
                            lista=lista)
 
