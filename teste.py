@@ -5,6 +5,8 @@ from mysql.connector import errorcode
 #adicionado branch titulo user principal
 #modifie pour ana
 
+
+#simulacao de bug
 DB_NAME = 'employees'
 
 cnx = mysql.connector.connect(
