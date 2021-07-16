@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EQUISMART" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Recherche_information" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pycharm_recherche_information" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/recherche_trouble" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/troubleshootingserver" vcs="Git" />
+  </component>
+</project>

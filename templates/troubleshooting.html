@@ -1,0 +1,39 @@
+{% extends "template.html" %}
+{% block conteudo %}
+        <table class="table table-striped table-responsive table-bordered">
+            <thead class="thead-default">
+
+                <tr>
+                    <th>trouble_no</th>
+                    <th>description_fault</th>
+                    <th>description_cause</th>
+                    <th>description_resolution</th>
+                    <th>description_reference</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+            {% for item in lista %}
+                <tr>
+                    <td>{{ item.trouble_no }}</td>
+                    <td>{{ item.description_fault }}</td>
+                    <td>{{ item.description_cause }}</td>
+                    <td>{{ item.description_resolution }}</td>
+                    <td>{{ item.description_reference }}</td>
+                    <td>
+                        <a href="{{ url_for('edit', trouble_no=item.trouble_no) }}">Edit</a>
+                        <a href="{{ url_for('delete', trouble_no=item.trouble_no, data=item.description_fault, data1=item.description_cause,
+                         data2=item.description_resolution, data3=item.description_reference)  }}">Delete</a>
+
+                    </td>
+                </tr>
+            {% endfor %}
+
+
+            </tbody>
+
+        </table>
+        <span>[ <a href="  {{  url_for('new')  }}  "id="link_new"> New</a>] </span>
+        <span>[ <a href="  {{  url_for('logout')  }}  " id="link_home">logout</a> ]</span>
+{% endblock %}
