@@ -3,7 +3,7 @@ from __future__ import print_function
 import mysql.connector
 from mysql.connector import errorcode
 
-
+#modifie pour ana
 
 DB_NAME = 'employees'
 
