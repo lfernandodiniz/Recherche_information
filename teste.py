@@ -2,7 +2,7 @@ from __future__ import print_function
 
 import mysql.connector
 from mysql.connector import errorcode
-#adicionado branch titulo user principal
+#adicionado branch lista user principal
 #modifie pour ana
 
 
