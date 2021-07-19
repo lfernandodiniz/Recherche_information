@@ -4,7 +4,7 @@
             <thead class="thead-default">
 
                 <tr>
-                    <th>trouble_no</th>
+                    <!-- <th>trouble_no</th> -->
                     <th>description_fault</th>
                     <th>description_cause</th>
                     <th>description_resolution</th>
@@ -16,7 +16,7 @@
             <tbody>
             {% for item in lista %}
                 <tr>
-                    <td>{{ item.trouble_no }}</td>
+                    <!-- <td>{{ item.trouble_no }}</td> -->
                     <td>{{ item.description_fault }}</td>
                     <td>{{ item.description_cause }}</td>
                     <td>{{ item.description_resolution }}</td>
@@ -34,6 +34,9 @@
             </tbody>
 
         </table>
-        <span>[ <a href="  {{  url_for('new')  }}  "id="link_new"> New</a>] </span>
-        <span>[ <a href="  {{  url_for('logout')  }}  " id="link_home">logout</a> ]</span>
+        <!-- <span>[ <a href="  {{  url_for('new')  }}  "id="link_new"> New</a>] </span> -->
+        <!-- <span>[ <a href="  {{  url_for('logout')  }}  " id="link_home">logout</a> ]</span> -->
+        <a class="btn btn-primary" href="{{ url_for('new') }}">New</a>
+        <a class="btn btn-primary" href="{{ url_for('logout') }}">Logout</a>
+        <a class="btn btn-danger" href="{{ url_for('index') }}">Back</a>
 {% endblock %}
